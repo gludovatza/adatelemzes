@@ -11,6 +11,8 @@ print(type([1, 2, 3, 4, 5]))
 
 print(np.__version__)
 
+# https://www.w3schools.com/python/numpy/numpy_creating_arrays.asp
+
 print(np.array(42))
 
 arr = np.array([[1, 2, 3], [4, 5, 6]])
@@ -29,6 +31,8 @@ print(d.ndim)
 arr = np.array([1, 2, 3, 4], ndmin=5)
 print(arr)
 print('number of dimensions :', arr.ndim)
+
+# https://www.w3schools.com/python/numpy/numpy_array_indexing.asp
 
 arr = np.array([1, 2, 3, 4])
 print(arr[0])
@@ -52,6 +56,8 @@ arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 
 print('Last element from 2nd dim: ', arr[1, -1]) 
 
+# https://www.w3schools.com/python/numpy/numpy_array_slicing.asp
+
 arr = np.array([1, 2, 3, 4, 5, 6, 7])
 
 print(arr[1:5])
@@ -71,8 +77,8 @@ print(arr[1, 1:4])
 print(arr[0:2, 2]) # kiadja a 3 és 8 elemeket
 print(arr[3:9, 2]) # hibát jelezhetne, mert nincs ennyi sora az tömbnek, de a numpy nem jelez hibát, csak a létező sorokat adja vissza, ami itt most üres eredményt ad vissza
 
-
 # https://www.w3schools.com/python/numpy/numpy_data_types.asp
+
 arr = np.array([1, 2, 3, 4])
 
 print(arr.dtype)
@@ -125,6 +131,7 @@ newarr = arr.astype(bool)
 print(newarr)
 print(newarr.dtype) 
 
+# slicing with 2D arrays
 B = np.array([
     [12, 7, 3, 8],
     [4, 5, 6, 2],
