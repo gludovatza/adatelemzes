@@ -6,6 +6,7 @@ kocka = np.random.randint(1, 7, size=n) # 1-től 6-ig terjedő véletlen egész 
 
 # Gyakoriságok számítása
 egyedi, db = np.unique(kocka, return_counts=True) # egyedi értékek és azok gyakoriságai
+# 1-esből dobtunk 1000, 2-esből 1700, stb.
 gyakorisag_szazalek = db / n * 100
 
 # Kiírás
