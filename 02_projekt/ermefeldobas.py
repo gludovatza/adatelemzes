@@ -17,7 +17,7 @@ print(f"A fejek aránya: {fej_arany:.2f}%")
 print(f"Az írások aránya: {iras_arany:.2f}%")
 
 # Vizualizáció
-plt.bar(('fej', 'írás'), (fej_arany, iras_arany))
+plt.bar(('fej', 'írás'), (fej_arany, iras_arany)) # vízsintes és függőleges értékek az oszlopdiagramon
 plt.title("Dobások eloszlása (10 000 kísérlet)")
 plt.xlabel("Dobott szám")
 plt.ylabel("Gyakoriság (%)")
