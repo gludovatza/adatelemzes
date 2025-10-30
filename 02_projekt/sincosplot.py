@@ -23,7 +23,8 @@ plt.xticks([0, np.pi/2, np.pi, 3*np.pi/2, 2*np.pi],
 plt.legend() # Jelmagyarázat megjelenítése
 plt.grid(True, linestyle='dotted', alpha=0.7)
 
-# A diagram megjelenítése
-plt.show()
 # A diagram elmentése (programozottan)
 plt.savefig("sin_cos_plot.png", dpi=150)
+
+# A diagram megjelenítése
+plt.show()
